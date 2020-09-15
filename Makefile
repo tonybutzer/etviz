@@ -2,10 +2,9 @@ readme:
 	cat README.md
 	echo see Makefile
 
+
 jupc:	# run jupyter from container
-
-	docker run -it -p 80:8888 -v `pwd`:/home/notebooks/ tbutzer/jupyter-lite jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml'
-
+	docker run -it -p 80:8888 -v `pwd`:/home/jovyan/notebooks/ pangeo/pangeo-notebook jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml'
 
 git:
 	#git remote set-url origin https://github.com/tonybutzer/etviz.git
@@ -16,4 +15,8 @@ git:
 	git add .
 	git commit -m "automatic git update from Makefile"
 	git push
+
+
+oldjupc:	# run jupyter from container
+	docker run -it -p 80:8888 -v `pwd`:/home/notebooks/ tbutzer/jupyter-lite jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml'
 
