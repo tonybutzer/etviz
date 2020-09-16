@@ -7,6 +7,11 @@ jupc:	# run jupyter from container
 	docker run -it -p 80:8888 -v `pwd`:/home/jovyan/notebooks/ pangeo/pangeo-notebook jupyter notebook --allow-root --ip="0.0.0.0" --NotebookApp.token='yaml'
 
 git:
+	find . -size +10M
+	echo du -a ./ | sort -n -r | head -n 20
+	for file in `find . -size +10M`; do ls -lh $$file; done
+
+git-publish:
 	#git remote set-url origin https://github.com/tonybutzer/etviz.git
 	git remote set-url origin git@github.com:tonybutzer/etviz.git
 	git config --global user.email tonybutzer@gmail.com
