@@ -29,3 +29,23 @@ Architecture and open source tools.
 1. get geoserver geo? software running in the AWS CHS Cloud
 	- start up a t3a-2xlarge EC2 instance running CentOS
 	- get code and install instructions from michelle
+
+
+# ErosGeoEngine5
+
+Hi, Tony:
+I've given you access to our Confluence space EROS GeoEngine5.  Reza wrote up a page for UCSB to deploy our v1.0.5 and it is here:   
+- https://my.usgs.gov/confluence/display/ErosGeoengine5/G5+v1.0.5+Deployment+to+UCSB
+
+Those instructions may need to be tweaked for later releases although I haven't had a chance to look at that.  Our current release is tagged as v1.0.7, and I think you should start with that , as the database schema has several changes from v1.0.5.
+
+Code base is in GitLab: 
+- https://eroslab.cr.usgs.gov/SCIENCE/geoengine5
+You should be able to access it, let me or Michelle know if you have problems.
+
+Thanks!
+Cheryl Holen
+KBR | Software Engineer III
+
+
+
