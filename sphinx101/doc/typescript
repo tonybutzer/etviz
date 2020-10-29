@@ -1,0 +1,45 @@
+Script started on 2020-10-27 15:28:12+0000
+$ sphinx-quickstart
+[01mWelcome to the Sphinx 3.2.1 quickstart utility.[39;49;00m
+
+Please enter values for the following settings (just press Enter to
+accept a default value, if one is given in brackets).
+
+[01mSelected root path: .[39;49;00m
+
+You have two options for placing the build directory for Sphinx output.
+Either, you use a directory "_build" within the root path, or you separate
+"source" and "build" directories within the root path.
+[35m> Separate source and build directories (y/n) [n]: [39;49;00my
+
+The project name will occur in several places in the built documentation.
+[35m> Project name: [39;49;00metviz
+[35m> Author name(s): [39;49;00mTony Butzer
+[35m> Project release []: [39;49;00m1.0
+
+If the documents are to be written in a language other than English,
+you can select a language here by its language code. Sphinx will then
+translate text that it generates into that language.
+
+For a list of supported codes, see
+https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language.
+[35m> Project language [en]: [39;49;00m
+
+Creating file /home/jupyter-butzer/opt/etviz/sphinx101/doc/source/conf.py.
+Creating file /home/jupyter-butzer/opt/etviz/sphinx101/doc/source/index.rst.
+File /home/jupyter-butzer/opt/etviz/sphinx101/doc/Makefile already exists, skipping.
+Creating file /home/jupyter-butzer/opt/etviz/sphinx101/doc/make.bat.
+
+[01mFinished: An initial directory structure has been created.[39;49;00m
+
+You should now populate your master file /home/jupyter-butzer/opt/etviz/sphinx101/doc/source/index.rst and create other documentation
+source files. Use the Makefile to build the docs, like so:
+   make builder
+where "builder" is one of the supported builders, e.g. html, latex or linkcheck.
+
+$ ls
+Makefile  build  make.bat  source  typescript
+$ cd sou	      
+$ moer    re Ma	       
+
+Script done on 2020-10-27 15:29:42+0000

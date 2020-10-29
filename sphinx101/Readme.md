@@ -8,6 +8,8 @@ https://pythonhosted.org/an_example_pypi_project/sphinx.html
 
 https://buildmedia.readthedocs.org/media/pdf/brandons-sphinx-tutorial/latest/brandons-sphinx-tutorial.pdf
 
+https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/
+
 
 ## Common Outputs
 - html
