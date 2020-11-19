@@ -1,5 +1,8 @@
 FROM python
 
+RUN apt-get -y update \
+   &&  apt-get -y install gdal-bin python-gdal python3-gdal libgdal-dev
+
 RUN pip3 install --upgrade pip && pip3 install jupyter \
     && pip3 install boto3 \
     && pip3 install matplotlib \
@@ -10,6 +13,9 @@ RUN pip3 install --upgrade pip && pip3 install jupyter \
     && pip3 install xlrd  \
     && pip3 install panel \
     && pip3 install holoviews \
+    && pip3 install hvplot \
+    && pip3 install xarray \
+    && pip3 install rasterio \
     && pip3 install bokeh 
 
 

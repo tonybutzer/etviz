@@ -3,6 +3,12 @@ Image='tbutzer/panel-play'
 build:
 	docker build -t ${Image} .
 
+bokeh:
+	docker build -f Dockerfile.bokeh -t tbutzer/bokeh .
+
+debug:
+	docker build -f Dockerfile.debug -t tbutzer/debug .
+
 pie:
 	docker build -f Dockerfile.pie -t tbutzer/pie .
 
