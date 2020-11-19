@@ -1,0 +1,35 @@
+version: '3'
+
+networks:
+  tonynet:
+    driver: overlay
+
+services:
+
+
+  website:
+    image: tbutzer/nginx_debug
+    command: /bin/sh -c "sleep 6; nginx -g 'daemon off;'"
+    volumes:
+      - ./nginx_conf/03-default.conf:/etc/nginx/conf.d/default.conf
+      - ./nginx_conf:/etc/nginx/html
+      # - ./nginx_conf/kan-proxy.conf:/etc/nginx/sites-available/kan-proxy.conf
+    ports:
+      #- 8100:8100
+      #- 8443:8443
+      - 8080:80
+    networks:
+      - tonynet
+    depends_on:
+      - "pie-service"
+    deploy:
+      placement:
+        constraints: [node.role == manager]
+
+  pie-service:
+    image: tbutzer/pie-lite
+    ports:
+    - 8443:5006
+    networks:
+      - tonynet
+

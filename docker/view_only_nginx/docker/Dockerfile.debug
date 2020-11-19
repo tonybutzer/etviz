@@ -1,0 +1,10 @@
+FROM python
+RUN apt-get -y update \
+   &&  apt-get -y install gdal-bin python-gdal python3-gdal libgdal-dev
+
+RUN pip3 install --upgrade pip \
+    && pip3 install rasterio \
+    && pip3 install bokeh 
+
+
+WORKDIR /home

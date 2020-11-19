@@ -1,0 +1,7 @@
+FROM tbutzer/panel-play
+
+COPY pie.ipynb /home/pie.ipynb
+
+WORKDIR /home
+
+CMD panel serve --address 0.0.0.0 --allow-websocket-origin=10.12.68.246:8080 pie.ipynb 
